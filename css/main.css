@@ -1,0 +1,89 @@
+/* Setting Body width for consistency in larger devices */
+body{
+  max-width: 1200px;
+  margin: 0 auto;
+  border: 2px solid aqua;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 16px;
+  color: #727272;
+}
+
+
+/* Header */
+
+/* nav */
+nav{
+  display: flex;
+  justify-content: space-between;
+  margin: 0 50px ;
+}
+
+.logo{
+  font-size: 45px;
+  font-weight: 700;
+  color: #131313;
+  line-height: 53px;
+}
+
+#menu{
+  display: flex;
+  gap: 25px;
+  margin-top: 45px;
+  list-style: none;
+}
+
+
+#menu a{
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 26px;
+  color: #424242;
+  font-weight: 500;
+}
+
+/* Introduction */
+.introduction{
+  margin: auto 50px;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.introduction .text{
+  max-width: 800px;
+  margin: auto;
+  text-align: center;
+}
+
+.header-title{
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 70px;
+  color: #131313;
+}
+
+.banner img{
+  width: 100%;
+}
+
+.btn-primary{
+  height: 64px;
+  font-size: 20px;
+  background-color: #FF900E;
+  color: #FFFFFF;
+  padding: 20px;
+  border-radius: 5px;
+
+}
+
+
+
+
+
+/* Responsive for mobile */
+@media screen and (max-width : 576px) {
+  
+  nav{
+
+    flex-direction: column;
+  }
+}
