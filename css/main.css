@@ -242,7 +242,15 @@ footer{
 
 /* Responsive for mobile */
 @media screen and (max-width : 576px) {
-  
+  .logo{
+    text-align: center;
+  }
+
+  #menu{
+    justify-content: space-evenly;
+  }
+/* I pureposefully kept the menu in one row. Because it looks better. */
+
   nav{
     flex-direction: column;
   }
