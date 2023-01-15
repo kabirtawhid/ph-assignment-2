@@ -8,14 +8,29 @@ body{
   color: #727272;
 }
 
+.btn-primary{
+  height: 64px;
+  font-size: 20px;
+  background-color: #FF900E;
+  color: #FFFFFF;
+  padding: 20px;
+  border-radius: 8px;
+  border: none;
+  margin: 15px auto;
+}
 
 /* Header */
+
+header{
+  background-color: #fff4e7;
+  padding: 0 50px;
+  padding-bottom: 30px;
+}
 
 /* nav */
 nav{
   display: flex;
   justify-content: space-between;
-  margin: 0 50px ;
 }
 
 .logo{
@@ -43,7 +58,6 @@ nav{
 
 /* Introduction */
 .introduction{
-  margin: auto 50px;
   flex-direction: column;
   justify-content: center;
 }
@@ -63,17 +77,40 @@ nav{
 
 .banner img{
   width: 100%;
+  margin-top: 20px;
 }
 
-.btn-primary{
-  height: 64px;
-  font-size: 20px;
-  background-color: #FF900E;
-  color: #FFFFFF;
-  padding: 20px;
-  border-radius: 5px;
 
+
+/* Main */
+.section-title{
+  font-size: 40px;
 }
+
+/* Section :- Quick Overview of Feaure  */
+
+section.quick-list-features{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 50px 80px;
+}
+
+div.photo{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.photo img{
+  width: 45%;
+  height: auto;
+}
+
+.quick-list-features .text{
+  width: 80%;
+  margin: auto;
+}
+
 
 
 
