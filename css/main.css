@@ -2,10 +2,13 @@
 body{
   max-width: 1200px;
   margin: 0 auto;
-  border: 2px solid aqua;
   font-family: 'Work Sans', sans-serif;
   font-size: 16px;
   color: #727272;
+}
+
+p{
+  line-height: 26px;
 }
 
 .btn-primary{
@@ -45,13 +48,13 @@ nav{
   gap: 25px;
   margin-top: 45px;
   list-style: none;
+  line-height: 26px;
 }
 
 
 #menu a{
   text-decoration: none;
   font-size: 18px;
-  line-height: 26px;
   color: #424242;
   font-weight: 500;
 }
@@ -83,8 +86,24 @@ nav{
 
 
 /* Main */
+main{
+  margin: auto 50px;
+}
+
+section{
+  margin-top: 100px;
+}
+
 .section-title{
   font-size: 40px;
+  color: #131313;
+  margin: 20px 0px;
+}
+
+.section-subtitle{
+  font-size: 20px;
+  font-weight: 600;
+  color: #131313;
 }
 
 /* Section :- Quick Overview of Feaure  */
@@ -95,10 +114,12 @@ section.quick-list-features{
   margin: 50px 80px;
 }
 
-div.photo{
+.quick-list-features .photo{
   display: flex;
   flex-wrap: wrap;
   gap: 15px;
+  position: relative;
+  margin-bottom: 50px;
 }
 
 .photo img{
@@ -111,8 +132,111 @@ div.photo{
   margin: auto;
 }
 
+.section-title .fade{
+  font-weight: 500;
+}
+.section-title .bold{
+  font-weight: 700;
+  color: #131313;
+}
+.section-title .red{
+  font-weight: 700;
+  color: #FF900E;
+}
 
 
+/* Section :- Feature Overview */
+section.feature-overview{
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  gap: 70px;
+  position: relative;
+}
+
+.title-container{
+  display: flex;
+}
+
+.title-container hr{
+  width: 5px;
+  height: 80px;
+  margin: 24px 21px 0px 0px ;
+  border: none;
+  background-color: #FF900E;
+}
+.title-container h2{
+  margin-bottom: 0px;
+}
+
+.feature-overview img{
+  width: 100%;
+}
+
+.card{
+  padding: 10px;
+  box-shadow: 3px 3px 5px 5px #f9f9f9;
+}
+
+.btn-tricky{
+  height: auto; 
+  padding: 35px; 
+  position: relative; 
+  top: -90px;
+  left: -40px
+}
+
+
+/* Section:- Some Facts */
+.some-facts .container{
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 80px;
+}
+.stats{
+  border: 1px solid #FF900E;
+  border-radius: 8px;
+  width: 210px;
+  height: 210px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-title{
+  font-size: 40px;
+  font-weight: 600;
+  color: #424242;
+  margin: 10px;
+}
+
+.stats p{
+  margin-top: 0px;
+}
+
+/* Section:- Sponsors */
+.sponsor .text{
+  max-width: 542px;
+  margin: auto;
+  text-align: center;
+}
+.sponsor .photos{
+  display: flex;
+  gap: 50px;
+  justify-content: space-evenly;
+}
+.sponsor img{
+  width: 90%;
+  filter: grayscale(100%);
+}
+
+/* Footer */
+footer{
+  margin: 50px 50px;
+  text-align: center;
+  background-color: #fff4e7;
+  padding: 7px;
+}
 
 
 
@@ -120,7 +244,38 @@ div.photo{
 @media screen and (max-width : 576px) {
   
   nav{
-
     flex-direction: column;
   }
+
+  /* Section :- Quick List Feature */
+  section.quick-list-features{
+    grid-template-columns: 1fr;
+  }
+  .quick-list-features .photo{
+    flex-direction: column;
+  }
+  .photo img{
+    width: 100%;
+  }
+
+  /* Section :- Feature Overview */
+  section.feature-overview{
+    grid-template-columns: 1fr;
+  }
+
+  .btn-tricky{
+    position: static;
+    
+  }
+
+  /* Section:- Some Facts */
+  .some-facts .container{
+    display: block;
+  }
+
+  .stats{
+    margin: 20px auto;
+  }
+
+
 }
